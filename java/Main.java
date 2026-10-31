@@ -1,29 +1,29 @@
-// Aula 11 - Lógica de Programação | Desafio Garagem Inteligente
-// Complete os trechos TODO. Execute em um compilador Java online.
-
 class Carro {
     String marca;
     String modelo;
     int ano;
 
+    // Construtor: equivale ao __init__ do Python
     Carro(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
     }
 
+    // TODO 1: mostra marca, modelo e ano
     void exibirInfo() {
-        // TODO 1: mostre marca, modelo e ano com System.out.println().
-        // Dica: System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
+        System.out.println("Marca: " + marca + " | Modelo: " + modelo + " | Ano: " + ano);
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        // TODO 2: crie DOIS objetos com new Carro(...).
-        // Exemplo: Carro carro1 = new Carro("...", "...", 2020);
+        // TODO 2: dois objetos da classe Carro, com marcas, modelos e anos diferentes
+        Carro carro1 = new Carro("Toyota", "Corolla", 2020);
+        Carro carro2 = new Carro("Volkswagen", "Gol", 2024);
 
-        // TODO 3: chame exibirInfo() nos DOIS objetos.
-        // Exemplo: carro1.exibirInfo();
+        // TODO 3: chamando exibirInfo() nos dois objetos
+        carro1.exibirInfo();
+        carro2.exibirInfo();
     }
 }
